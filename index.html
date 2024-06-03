@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS-Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <img src="logo.jpeg" alt="Logo" class="logo">
+            <h1>MS-Todo App</h1>
+            <input type="text" id="search" placeholder="Search tasks...">
+        </header>
+        <main>
+            <section class="task-input">
+                <input type="text" id="new-task" placeholder="Task Description">
+                <input type="date" id="due-date">
+                <select id="priority">
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+                <input type="text" id="category" placeholder="Category">
+                <input type="text" id="time-estimate" placeholder="Time Estimate (hrs)">
+                <button id="add-task">Add Task</button>
+            </section>
+            <section class="task-list">
+                <ul id="tasks">
+                    <!-- Task items will go here -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modal for adding subtasks -->
+    <div id="subtask-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Subtask</h2>
+            <input type="text" id="subtask-input" placeholder="Subtask Description">
+            <button id="add-subtask-btn">Add Subtask</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
