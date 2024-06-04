@@ -1,5 +1,3 @@
-Sure, here's the updated markdown file with your JavaScript code included:
-
 ```markdown
 # MS-Todo App
 
@@ -16,10 +14,6 @@ This is a simple MS-Todo web application.
 - HTML
 - CSS
 - JavaScript
-
-## Screenshots
-
-Include screenshots here if applicable.
 
 ## Usage
 
